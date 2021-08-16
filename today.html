@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>hello </title>
+</head>
+<body>
+THE ADDITION<BR>
+<input type="text" id="name" onblur="search()">
+<p id="result"></p>
+<script>
+var x=5;
+var y=6;
+var z= x+y;
+document.write(z);
+
+function search(){
+var names = ["diane","patrick","sandrine","chelsea"];
+var text= document.getElementById("name").value;
+for(var i=0;i<names.length;i++){
+if(text==names[i])
+{
+document.getElementById("result").innerHTML="This name exist in the array";
+}
+else{
+document.getElementById("result").innerHTML="This name does not exist in the array";
+}
+}
+}
+</script>
+</body>
+</html>
